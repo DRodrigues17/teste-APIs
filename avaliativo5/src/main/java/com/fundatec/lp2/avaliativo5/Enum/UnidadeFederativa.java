@@ -1,0 +1,31 @@
+package com.fundatec.lp2.avaliativo5.Enum;
+
+public enum UnidadeFederativa {
+    AC,
+    AL,
+    AP,
+    AM,
+    BA,
+    CE,
+    DF,
+    ES,
+    GO,
+    MA,
+    MS,
+    MG,
+    MT,
+    PA,
+    PB,
+    PE,
+    PI,
+    PR,
+    RJ,
+    RN,
+    RS,
+    RO,
+    RR,
+    SC,
+    SP,
+    SE,
+    TO
+}
