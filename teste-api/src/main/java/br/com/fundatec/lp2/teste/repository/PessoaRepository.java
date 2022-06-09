@@ -1,20 +1,16 @@
 package br.com.fundatec.lp2.teste.repository;
 
-import java.util.List;
+import br.com.fundatec.lp2.teste.model.Pessoa;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
 import java.util.Optional;
 
-import br.com.fundatec.lp2.teste.model.Pessoa;
+@Repository
+public interface PessoaRepository extends JpaRepository<Pessoa, Integer> {
 
-public interface PessoaRepository {
-	
-	List<Pessoa> listar();
-	
-	Optional<Pessoa> buscarPorCpf(String cpf);
-	
-	Pessoa criar(Pessoa pessoa);
-	
-	void alterar(Pessoa pessoa);
-	
-	void excluirPorCpf(String cpf);
+    Optional<Pessoa> findByCpf(String cpf);
+
+    void deleteByCpf(String cpf);
 
 }
