@@ -63,7 +63,7 @@ public class CidadeController {
     }
 
     @GetMapping("/")
-    public Cidade findByLike(@RequestParam("name") String nome){
+    public Cidade findByLike(@RequestParam("nome") String nome){
         Optional<Cidade> optionalCity = cidadeService.findByLike(nome);
         if (optionalCity.isPresent())
             return optionalCity.get();

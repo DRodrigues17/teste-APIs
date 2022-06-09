@@ -18,7 +18,7 @@ public class Cidade {
     private Integer id;
 
     @Column(nullable = false)
-    private String name;
+    private String nome;
 
     @Column(nullable = false, length = 7)
     private Long codigoIbge;

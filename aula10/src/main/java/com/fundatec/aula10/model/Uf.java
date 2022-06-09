@@ -15,7 +15,7 @@ public class Uf {
     private Integer id;
 
     @Column
-    private String name;
+    private String nome;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "uf", cascade = CascadeType.ALL)
     @JsonIgnoreProperties("uf")

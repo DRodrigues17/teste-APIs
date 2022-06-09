@@ -1,10 +1,8 @@
 package com.fundatec.aula10.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Data
 @Entity
@@ -15,7 +13,7 @@ public class Pais {
     private Integer id;
 
     @Column
-    private String name;
+    private String nome;
 
     @Column
     private Long population;
